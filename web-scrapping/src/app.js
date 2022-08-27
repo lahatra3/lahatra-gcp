@@ -7,7 +7,7 @@ puppeteer.use(pluginStealth());
 
 async function start() {
     const browser = await puppeteer.launch({
-        args: ['--disable-features=site-per-process']
+        headless: true
     });
     const page = await browser.newPage();
     await page.goto(`https://console.cloud.google.com/welcome?project=lahatra3&authuser=1&cloudshell=true`);
