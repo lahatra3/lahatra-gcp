@@ -18,6 +18,7 @@ async function runCommand(page) {
     const commands = "cd ~/lahatra-gcp && nvm install --lts && nvm use --lts && npm install -g @nestjs/cli && git pull origin main && cd api && npm install && nest build && nest start";
     commands.split("").forEach(async (value) => await page.keyboard.press(value));
     await page.keyboard.press('Enter');
+    console.log(commands)
 }
 
 function timeSleep(time) {
