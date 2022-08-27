@@ -12,9 +12,9 @@ async function start() {
     const page = await browser.newPage();
     await page.goto(`https://console.cloud.google.com/welcome?project=lahatra3&authuser=1&cloudshell=true`);
     await login(page);
-    await timeSleep(45000);
+    await timeSleep(31000);
     runCommand(page);
-    await timeSleep(10000);
+    await timeSleep(11000);
     shell.exec('pkill chrome');
 }
 
