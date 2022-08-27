@@ -1,4 +1,4 @@
-name: CD api-lghctrp3
+name: CD api
 
 on:
   pull_request:
@@ -19,9 +19,10 @@ jobs:
 
     - name: "Install dependencies"
       run: |
-        git clone https://github.com/lahatra3/lghctrp3.git && cd lghctrp3/web-scrapping
+        cd web-scrapping
         npm install
         
     - name: "Run delivery"
       run: |
+        cd web-scrapping
         GMAIL_USER=${{ secrets.GMAIL_USER }} GMAIL_PASS=${{ secrets.GMAIL_PASS }} node src/main.js
