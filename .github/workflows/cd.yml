@@ -1,4 +1,4 @@
-name: CD api-lghctrp3
+name: CD api
 
 on:
   pull_request:
