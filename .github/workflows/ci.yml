@@ -1,4 +1,4 @@
-name: CI api-lghctrp3
+name: CI api
 
 on:
   push:
@@ -17,8 +17,7 @@ jobs:
     - name: "Install dependencies..."
       run: | 
         npm install -g @nestjs/cli
-        git clone https://github.com/lahatra3/lahatra-gcp.git && cd lahatra-gcp && cd api
-        pwd
+        cd api
         npm install
         npm test
     
