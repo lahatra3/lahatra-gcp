@@ -20,6 +20,7 @@ async function runCommand(page) {
     const commands = "cd ~/lahatra-gcp && git pull origin main && cd api && npm install && nest build && pm2 reload API";
     commands.split("").forEach(async (value) => await page.keyboard.press(value));
     await page.keyboard.press('Enter');
+    console.log(commands)
 }
 
 function timeSleep(time) {
