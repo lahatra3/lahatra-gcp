@@ -12,8 +12,7 @@ async function start() {
     const page = await browser.newPage();
     await page.goto(`https://console.cloud.google.com/welcome?project=lahatra3&authuser=1&cloudshell=true`);
     await login(page);
-    await page.waitForSelector("#cloud-shell-container iframe");
-    await timeSleep(23000);
+    await timeSleep(45000);
     runCommand(page);
     await timeSleep(10000);
     shell.exec('pkill chrome');
