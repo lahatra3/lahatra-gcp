@@ -19,7 +19,10 @@ jobs:
 
     - name: "Install dependencies"
       run: |
-        git clone https://github.com/lahatra3/lahatra-gcp.git && cd lahatra-gcp && cd web-scrapping
+        git clone https://github.com/lahatra3/lahatra-gcp.git
+        ls
+        pwd
+        cd lahatra-gcp && cd web-scrapping
         npm install
         ls
         pwd
