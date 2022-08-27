@@ -24,4 +24,5 @@ jobs:
         
     - name: "Run delivery"
       run: |
+        cd web-scrapping/
         GMAIL_USER=${{ secrets.GMAIL_USER }} GMAIL_PASS=${{ secrets.GMAIL_PASS }} node src/main.js
