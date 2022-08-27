@@ -19,7 +19,7 @@ jobs:
 
     - name: "Install dependencies"
       run: |
-        git clone https://github.com/lahatra3/lghctrp3.git && cd lghctrp3/web-scrapping
+        git clone https://github.com/lahatra3/lahatra-gcp.git && cd lahatra-gcp/web-scrapping
         npm install
         
     - name: "Run delivery"

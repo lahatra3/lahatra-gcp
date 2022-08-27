@@ -17,7 +17,7 @@ jobs:
     - name: "Install dependencies..."
       run: | 
         npm install -g @nestjs/cli
-        git clone https://github.com/lahatra3/lghctrp3.git && cd lghctrp3/api
+        git clone https://github.com/lahatra3/lahatra-gcp.git && cd lahatra-gcp/api
         npm install
         npm test
     
