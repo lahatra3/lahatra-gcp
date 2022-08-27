@@ -19,11 +19,11 @@ jobs:
 
     - name: "Install dependencies"
       run: |
+        cd web-scrapping
+        npm install
+        
+    - name: "Run delivery"
+      run: |
         ls
         pwd
-        
-   # - name: "Run delivery"
-    #  run: |
-    # git clone https://github.com/lahatra3/lahatra-gcp.git
-    #    pwd
     #    GMAIL_USER=${{ secrets.GMAIL_USER }} GMAIL_PASS=${{ secrets.GMAIL_PASS }} node src/main.js
