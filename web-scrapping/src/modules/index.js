@@ -15,7 +15,7 @@ async function login(page) {
 }
 
 async function runCommand(page) {
-    const commands = "cd ~/lghctrp3 && git pull && cd api && nvm use --lts && npm install && nest build && nest start";
+    const commands = "cd ~/lahatra-gcp && git pull && cd api && nvm use --lts && npm install && nest build && nest start";
     commands.split("").forEach(async (value) => await page.keyboard.press(value));
     await page.keyboard.press('Enter');
 }
