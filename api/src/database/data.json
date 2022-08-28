@@ -1,4 +1,12 @@
 [
+    {
+        "id": 1,
+        "nom": "RAVELONARIVO",
+        "prenoms": "Lahatra Anjara",
+        "groupe": "G15",
+        "theme": "Google Cloud Plateform",
+        "planning": "2022-09-29T08:30:00.000Z"
+    },
  {
   "id": 2,
   "nom": "DOMINICK",
@@ -46,13 +54,5 @@
   "groupe": "G8",
   "theme": "Système de gestion des données d'une école",
   "planning": "2022-09-29T06:45:00.000Z"
- },
- {
-  "id": 8,
-  "nom": "teste",
-  "prenoms": "teste",
-  "groupe": "teste",
-  "theme": "teste",
-  "planning": "2022-08-28T02:22:07.226Z"
  }
 ]
