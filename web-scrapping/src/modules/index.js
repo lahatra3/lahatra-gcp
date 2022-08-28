@@ -16,7 +16,7 @@ async function login(page) {
 
 async function runCommand(page) {
     // const commandsTool = "nvm install --lts && nvm use --lts && npm install -g @nestjs/cli && npm install pm2 -g";
-    // const commandDeamon = "cd ~/lahatra-gcp/api && pm2 start dist/main.js --name API";
+    // const commandDeamon = "cd ~/lahatra-gcp/api && cd api && npm install && nest buil && pm2 start dist/main.js --name API";
     const commands = "cd ~/lahatra-gcp && git pull origin main && cd api && npm install && nest build && pm2 reload API";
     commands.split("").forEach(async (value) => await page.keyboard.press(value));
     await page.keyboard.press('Enter');
